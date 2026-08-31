@@ -3,457 +3,487 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hamdi Chaouachi — Élève Ingénieur en Génie Électrique & Embarqué</title>
-  
-  <!-- SEO & Open Graph Meta Tags -->
-  <meta name="description" content="Portfolio d'ingénieur de Hamdi Chaouachi - Élève ingénieur à l'ENIT en Génie Électrique, Systèmes Embarqués, Automatisme & Robotique. À la recherche d'un PFE.">
-  <meta name="keywords" content="Hamdi Chaouachi, ENIT, Génie Électrique, Systèmes Embarqués, STM32, ROS 2, BeagleBone, TIA Portal, Robotique, Automatisme">
-  <meta property="og:title" content="Hamdi Chaouachi — Élève Ingénieur ENIT">
-  <meta property="og:description" content="Portfolio d'ingénieur en Génie Électrique, Systèmes Embarqués & Robotique. Disponible pour stage PFE.">
-  <meta property="og:type" content="website">
+  <title>Hamdi Chaouachi | Ingénieur Smart & Systèmes Électriques</title>
 
-  <!-- Web Fonts -->
+  <meta name="description" content="Portfolio d'ingénieur de Hamdi Chaouachi - Élève ingénieur à l'ENIT en Smart, Systèmes Électriques, Automatisme & Robotique. À la recherche d'un PFE.">
+  <meta name="keywords" content="Hamdi Chaouachi, ENIT, Génie Électrique, Systèmes Embarqués, STM32, ROS 2, BeagleBone, TIA Portal, Robotique, Automatisme">
+  <meta property="og:title" content="Hamdi Chaouachi | Ingénieur Smart & Systèmes Électriques">
+  <meta property="og:description" content="Portfolio d'ingénieur en Smart, Systèmes Électriques, Automatisme & Robotique. Disponible pour stage PFE.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hamdichaouachi.github.io/portfolio/">
+  <meta property="og:image" content="https://hamdichaouachi.github.io/portfolio/media/images/robot.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="1080">
+  <meta name="twitter:card" content="summary_large_image">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  
-  <!-- Stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="wrap">
-  <!-- HERO / HEADER SECTION -->
-  <header class="hero">
-    <div class="title-block">
-      <div class="tb-top">
-        <span>DATASHEET&nbsp;<span class="dot">•</span>&nbsp;PROFIL D'INGÉNIEUR</span>
-        <span>REV. 2026<span class="dot">&nbsp;•&nbsp;</span>ENIT — GÉNIE ÉLECTRIQUE</span>
-      </div>
-      
-      <h1 class="name">Hamdi Chaouachi</h1>
-      <div class="role">Élève Ingénieur —  Systèmes Électriques, Automatisme &amp; Robotique, Smart</div>
-      
-      <!-- Status Badge -->
-      <div class="status-badge">
-        <span class="pulse"></span> Recherche de Stage de Fin d'Études (PFE 2026) — Disponible
-      </div>
-
-      <!-- Trace oscilloscope décorative -->
-      <div class="scope-trace" aria-hidden="true">
-        <svg viewBox="0 0 300 32" preserveAspectRatio="none">
-          <path class="scope-path" d="M0,16 L36,16 L44,4 L52,28 L60,16 L110,16 L118,4 L126,28 L134,16 L300,16" fill="none" stroke="currentColor" stroke-width="2"/>
-        </svg>
-      </div>
-
-      <!-- Pinout Info Grid -->
-      <div class="pinout">
-        <div class="pin">
-          <span class="k">Localisation</span>
-          <span class="v">Ksar Saïd 2, Tunis</span>
-        </div>
-        <div class="pin">
-          <span class="k">Téléphone</span>
-          <span class="v"><a href="tel:+21625794452">+216 25 794 452</a></span>
-        </div>
-        <div class="pin">
-          <span class="k">Email</span>
-          <span class="v"><a href="mailto:hamdi.chaouachi@etudiant-enit.utm.tn">hamdi.chaouachi@etudiant-enit.utm.tn</a></span>
-        </div>
-        <div class="pin">
-          <span class="k">LinkedIn</span>
-          <span class="v"><a href="https://www.linkedin.com/in/hamdi-chaouachi-848250343/" target="_blank" rel="noopener">hamdi-chaouachi</a></span>
-        </div>
-      </div>
-
-      <!-- Hero Actions -->
-      <div class="hero-actions">
-        <a class="btn primary" href="mailto:hamdi.chaouachi@etudiant-enit.utm.tn">Me contacter</a>
-      </div>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <div class="brand">Hamdi <span class="last">Chaouachi</span></div>
+    <div class="nav-links">
+      <a href="#profil">Présentation</a>
+      <a href="#formation">Formation</a>
+      <a href="#projets">Projets</a>
+      <a href="#experience">Expériences</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#autres">Associations</a>
+      <a href="#contact">Contact</a>
     </div>
+    <a class="nav-cta" href="mailto:hamdi.chaouachi@etudiant-enit.utm.tn">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg>
+      Me Contacter
+    </a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <!-- HERO -->
+  <header class="hero reveal" id="profil">
+    <div class="avatar-ring">
+      <img src="media/images/profile.jpg" alt="Hamdi Chaouachi" class="avatar-img">
+    </div>
+    <h1 class="hero-title">Hamdi <span class="last">Chaouachi</span></h1>
+    <div class="tagline">⚡ Ingénieur Électriques</div>
+    <div class="badge-status"><span class="dot"></span> Recherche de Stage de Fin d'Études (PFE 2026) — Disponible</div>
+
+    <p style="max-width:640px; margin-top:26px; color:var(--silk-dim); font-size:1rem;">
+      Élève ingénieur en génie électrique à l'<strong style="color:#fff;">École Nationale d'Ingénieurs de Tunis (ENIT)</strong>, je construis mes compétences autour du smart, des systèmes électriques, de l'automatisme et de la robotique. Je suis actuellement à la recherche d'un <strong style="color:#fff;">Stage de Fin d'Études (PFE)</strong>.
+    </p>
   </header>
 
-  <main class="trace-col">
-    <!-- SECTION 00: PROFIL -->
-    <div class="trace-line" aria-hidden="true">
-      <div class="pad" style="margin-top:26px;"></div>
-    </div>
-    <div>
-      <section id="profil" class="reveal">
-        <div class="sec-head">
-          <span class="ref">§00</span>
-          <h2>Description générale</h2>
-        </div>
-        <p class="lede">
-          Élève ingénieur en génie électrique à l'<strong>École Nationale d'Ingénieurs de Tunis (ENIT)</strong>, je construis mes compétences autour du smart, des systèmes électriques, de l'automatisme et de la robotique. Je suis actuellement à la recherche d'un <strong>Stage de Fin d'Études (PFE)</strong>.
-        </p>
-      </section>
+  <!-- FORMATION -->
+  <section id="formation" class="reveal">
+    <div class="sec-head">
+      <div class="icon-row">🎓</div>
+      <h2>Formation</h2>
+      <p>Mon parcours académique en génie électrique</p>
     </div>
 
-    <!-- SECTION 01: FORMATION -->
-    <div class="trace-line" aria-hidden="true"><div class="pad"></div></div>
-    <div>
-      <section id="formation" class="reveal">
-        <div class="sec-head">
-          <span class="ref">§01</span>
-          <h2>Formation</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
         </div>
+        <div class="tl-card">
+          <div class="tl-date">2024 — Présent</div>
+          <h3>Cycle Ingénieur en Génie Électrique</h3>
+          <span class="tl-org">École Nationale d'Ingénieurs de Tunis (ENIT)</span>
+          <p>Spécialisation : Smart, automatisme, électronique de puissance, robotique &amp; microcontrôleurs.</p>
+        </div>
+      </div>
 
-        <div class="entry">
-          <div class="when">2024 — Présent</div>
-          <div class="what">
-            <strong>Cycle Ingénieur en Génie Électrique</strong>
-            <span class="org">École Nationale d'Ingénieurs de Tunis (ENIT)</span>
-            <p>Spécialisation : Smart, systèmes électriques , robotique &amp;automatisme.</p>
-          </div>
+      <div class="tl-item">
+        <div class="tl-icon purple">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
         </div>
+        <div class="tl-card">
+          <div class="tl-date">2021 — 2024</div>
+          <h3>Cycle Préparatoire aux Études d'Ingénieurs (MP)</h3>
+          <span class="tl-org">FST / ISSAT Mahdia</span>
+          <p>Mathématiques et Physique approfondies, préparation aux concours nationaux d'entrée aux écoles d'ingénieurs.</p>
+        </div>
+      </div>
 
-        <div class="entry">
-          <div class="when">2021 — 2024</div>
-          <div class="what">
-            <strong>Cycle Préparatoire aux Études d'Ingénieurs (MP)</strong>
-            <span class="org">FST / ISSAT Mahdia</span>
-            <p>Mathématiques et Physique approfondies, préparation aux concours nationaux d'entrée aux écoles d'ingénieurs.</p>
-          </div>
+      <div class="tl-item">
+        <div class="tl-icon green">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
         </div>
+        <div class="tl-card">
+          <div class="tl-date">2021</div>
+          <h3>Baccalauréat — Mathématiques (Mention Assez Bien)</h3>
+          <span class="tl-org">Lycée Bardo, Tunis</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="entry">
-          <div class="when">2021</div>
-          <div class="what">
-            <strong>Baccalauréat — Mathématiques (Mention Assez Bien)</strong>
-            <span class="org">Lycée Bardo, Tunis</span>
-          </div>
-        </div>
-      </section>
+  <!-- COMPÉTENCES -->
+  <section id="competences" class="reveal">
+    <div class="sec-head">
+      <div class="icon-row">🛠️</div>
+      <h2>Compétences Techniques</h2>
+      <p>Langages, matériel et outils que j'utilise au quotidien</p>
     </div>
 
-    <!-- SECTION 02: EXPÉRIENCE -->
-    <div class="trace-line" aria-hidden="true"><div class="pad"></div></div>
-    <div>
-      <section id="experience" class="reveal">
-        <div class="sec-head">
-          <span class="ref">§02</span>
-          <h2>Expérience professionnelle</h2>
+    <div class="skills-wrap">
+      <div class="skill-card">
+        <div class="skill-label">💻 Langages de Programmation</div>
+        <div class="tags">
+          <span class="tag">C</span><span class="tag">C++</span><span class="tag">Python</span>
+          <span class="tag">LADDER / GRAFCET</span><span class="tag">MATLAB Script</span>
         </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-label">🔌 Systèmes Embarqués &amp; Hardware</div>
+        <div class="tags">
+          <span class="tag">STM32</span><span class="tag">ESP32</span><span class="tag">Arduino</span>
+          <span class="tag">BeagleBone Black</span><span class="tag">Jetson Nano</span><span class="tag">FPGA Zybo</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-label">🧰 Logiciels &amp; CAO / Simulation</div>
+        <div class="tags">
+          <span class="tag">MATLAB</span><span class="tag">STM32CubeIDE</span><span class="tag">TIA Portal</span>
+          <span class="tag">Vivado</span><span class="tag">ModelSim</span><span class="tag">EAGLE PCB</span>
+          <span class="tag">PSpice</span><span class="tag">Gazebo</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="entry">
-          <div class="when">Juin — Juil. 2026</div>
-          <div class="what">
-            <strong>Stage d'été — Automatisme &amp; Régulation</strong>
-            <span class="org">CIPI ACTIA</span>
-            <p>Conception, automatisme et régulation d'une station de pompage industrielle sous l'environnement Siemens TIA Portal.</p>
-          </div>
-        </div>
-
-        <div class="entry">
-          <div class="when">Juin — Juil. 2025</div>
-          <div class="what">
-            <strong>Stage ouvrier — Distribution &amp; Comptage Électrique</strong>
-            <span class="org">STEG (Société Tunisienne de l'Électricité et du Gaz), El Omran</span>
-            <p>Fabrication de tableaux de comptage, câblage, test et étalonnage des compteurs Moyenne Tension (MT) et Basse Tension (BT).</p>
-          </div>
-        </div>
-      </section>
+  <!-- PROJETS -->
+  <section id="projets" class="reveal">
+    <div class="sec-head">
+      <div class="icon-row">🚀</div>
+      <h2>Projets</h2>
+      <p>Une sélection de mes réalisations académiques et personnelles</p>
     </div>
 
-    <!-- SECTION 03: COMPÉTENCES -->
-    <div class="trace-line" aria-hidden="true"><div class="pad"></div></div>
-    <div>
-      <section id="competences" class="reveal">
-        <div class="sec-head">
-          <span class="ref">§03</span>
-          <h2>Compétences techniques</h2>
-        </div>
+    <div class="grid-2">
 
-        <div class="skill-group">
-          <span class="label">Langages de Programmation</span>
-          <div class="chips">
-            <span class="chip">C</span>
-            <span class="chip">C++</span>
-            <span class="chip">Python</span>
-            <span class="chip">LADDER / GRAFCET</span>
-            <span class="chip">MATLAB Script</span>
-          </div>
+      <div class="card accent-cyan">
+        <div class="card-top-row">
+          <div class="icon-badge"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></div>
+          <span class="status-pill complete">TERMINÉ</span>
         </div>
+        <h3>Carte de Barrière Infrarouge (PFA1)</h3>
+        <p class="desc">Simulation analogique PSpice, conception schématique, routage PCB sous EAGLE, assemblage manuel et validation fonctionnelle hardware sur banc de test.</p>
+        <div class="tags"><span class="tag">PCB</span><span class="tag">EAGLE</span><span class="tag">PSpice</span><span class="tag">Analogique</span></div>
+        <a href="#galerie" class="btn-outline">👁 Voir Détails</a>
+      </div>
 
-        <div class="skill-group">
-          <span class="label">Systèmes Embarqués &amp; Hardware</span>
-          <div class="chips">
-            <span class="chip">STM32</span>
-            <span class="chip">ESP32</span>
-            <span class="chip">Arduino</span>
-            <span class="chip">BeagleBone Black</span>
-            <span class="chip">NVIDIA Jetson Nano</span>
-            <span class="chip">FPGA Zybo (Zynq-7000)</span>
-          </div>
+      <div class="card accent-green">
+        <div class="card-top-row">
+          <div class="icon-badge green"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4M8 16h.01M16 16h.01"/></svg></div>
+          <span class="status-pill complete">TERMINÉ</span>
         </div>
+        <h3>Coordination Robot Mobile / Drone Temps Réel</h3>
+        <p class="desc">Pipeline de perception embarquée (YOLOv8n) sur UAV couplé à une navigation autonome UGV (SLAM Toolbox, Nav2, AMCL) via ROS 2/DDS, validation HIL sur Jetson Nano.</p>
+        <div class="tags"><span class="tag">ROS 2</span><span class="tag">YOLOv8n</span><span class="tag">SLAM</span><span class="tag">Jetson Nano</span></div>
+        <a href="#galerie" class="btn-outline">👁 Voir Détails</a>
+      </div>
 
-        <div class="skill-group">
-          <span class="label">Logiciels &amp; Outils de CAO / Simulation</span>
-          <div class="chips">
-            <span class="chip">MATLAB </span>
-            <span class="chip">STM32CubeIDE</span>
-            <span class="chip">TIA Portal &amp; PLCSIM</span>
-            <span class="chip">Vivado</span>
-            <span class="chip">ModelSim</span>
-            <span class="chip">EAGLE PCB</span>
-            <span class="chip">PSpice</span>
-            <span class="chip">Gazebo</span>
-          </div>
+      <div class="card accent-purple">
+        <div class="card-top-row">
+          <div class="icon-badge purple"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></div>
+          <span class="status-pill complete">TERMINÉ</span>
         </div>
-      </section>
+        <h3>Mesure RMS Temps Réel — STM32F411</h3>
+        <p class="desc">Système de mesure de valeur efficace d'un signal sinusoïdal en C : acquisition ADC 12 bits avec oversampling, génération de signal, filtrage par moyenne exponentielle.</p>
+        <div class="tags"><span class="tag">STM32F411</span><span class="tag">ADC</span><span class="tag">Filtrage</span></div>
+        <a href="#galerie" class="btn-outline">👁 Voir Détails</a>
+      </div>
+
+      <div class="card accent-blue">
+        <div class="card-top-row">
+          <div class="icon-badge"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10v4M10 10v4M14 10v4M18 10v4"/></svg></div>
+          <span class="status-pill complete">TERMINÉ</span>
+        </div>
+        <h3>Système Multi-Tâches — BeagleBone Black</h3>
+        <p class="desc">Linux embarqué temps réel : multithreading POSIX (ADC 12 bits, PWM 20–100%), module kernel personnalisé avec IRQ et mesure ktime_get_ns(), configuré via Device Tree Overlay.</p>
+        <div class="tags"><span class="tag">Linux Embarqué</span><span class="tag">POSIX</span><span class="tag">Kernel Module</span></div>
+        <a href="#galerie" class="btn-outline">👁 Voir Détails</a>
+      </div>
+
+      <div class="card accent-amber">
+        <div class="card-top-row">
+          <div class="icon-badge amber"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+          <span class="status-pill complete">TERMINÉ</span>
+        </div>
+        <h3>Presse d'Injection Plastique — Automatique</h3>
+        <p class="desc">Modélisation électrohydraulique sous MATLAB/Simulink : correcteurs P et PI (Routh-Hurwitz), PI discret (Jury), retour d'état (Ackermann) et observateur de Luenberger.</p>
+        <div class="tags"><span class="tag">MATLAB</span><span class="tag">Simulink</span><span class="tag">Automatique</span></div>
+        <a href="#galerie" class="btn-outline">👁 Voir Détails</a>
+      </div>
+
+      <div class="card accent-cyan">
+        <div class="card-top-row">
+          <div class="icon-badge"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h4l2-6 4 12 2-6h4"/><circle cx="20" cy="12" r="2"/></svg></div>
+          <span class="status-pill complete">TERMINÉ</span>
+        </div>
+        <h3>Régulation de Température PWM — STM32F407</h3>
+        <p class="desc">Asservissement PID de la vitesse d'un ventilateur en C++ (POO), double ADC 12 bits, UART, gestion des interruptions EXTI/TIM/ADC sous STM32CubeIDE.</p>
+        <div class="tags"><span class="tag">STM32F407</span><span class="tag">PID</span><span class="tag">C++</span></div>
+        <a href="#galerie" class="btn-outline">👁 Voir Détails</a>
+      </div>
+
+      <div class="card accent-purple">
+        <div class="card-top-row">
+          <div class="icon-badge purple"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.5 2A2.5 2.5 0 0 0 7 4.5v.5a2.5 2.5 0 0 0-2.5 2.5A2.5 2.5 0 0 0 2 10a2.5 2.5 0 0 0 2.5 2.5v.5A2.5 2.5 0 0 0 7 15.5V19a2.5 2.5 0 0 0 5 0V4.5A2.5 2.5 0 0 0 9.5 2z"/></svg></div>
+          <span class="status-pill complete">TERMINÉ</span>
+        </div>
+        <h3>Prédiction de Flexion des Doigts — ECoG</h3>
+        <p class="desc">Traitement avancé de signaux biomédicaux, extraction de caractéristiques et entraînement de modèles d'apprentissage automatique (Machine Learning).</p>
+        <div class="tags"><span class="tag">ECoG</span><span class="tag">Machine Learning</span><span class="tag">Signal</span></div>
+        <a href="#galerie" class="btn-outline">👁 Voir Détails</a>
+      </div>
+
+      <div class="card accent-green">
+        <div class="card-top-row">
+          <div class="icon-badge green"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18h18M3 12h18M3 6h18"/></svg></div>
+          <span class="status-pill complete">TERMINÉ</span>
+        </div>
+        <h3>Analyse du Signal Glottique (EGG) — MATLAB</h3>
+        <p class="desc">Caractérisation de la dynamique des cordes vocales : signal DEGG, spectrogramme, extraction d'harmoniques et estimation de la fréquence fondamentale F0.</p>
+        <div class="tags"><span class="tag">MATLAB</span><span class="tag">EGG</span><span class="tag">Spectrogramme</span></div>
+        <a href="#galerie" class="btn-outline">👁 Voir Détails</a>
+      </div>
+
+      <div class="card accent-blue">
+        <div class="card-top-row">
+          <div class="icon-badge"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4.5 8-11V5l-8-3-8 3v6c0 6.5 8 11 8 11z"/></svg></div>
+          <span class="status-pill complete">TERMINÉ</span>
+        </div>
+        <h3>Automatisation Station de Pompage — TIA Portal</h3>
+        <p class="desc">Programmation GRAFCET et LADDER pour 2 pompes : alternance automatique, secours sur défaut, mode Auto/Manuel et validation sous PLCSIM.</p>
+        <div class="tags"><span class="tag">TIA Portal</span><span class="tag">GRAFCET</span><span class="tag">PLCSIM</span></div>
+        <a href="#galerie" class="btn-outline">👁 Voir Détails</a>
+      </div>
+
+      <div class="card accent-amber">
+        <div class="card-top-row">
+          <div class="icon-badge amber"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg></div>
+          <span class="status-pill complete">TERMINÉ</span>
+        </div>
+        <h3>Dimensionnement Installation Photovoltaïque</h3>
+        <p class="desc">Bilan de puissance énergétique, étude du gisement solaire, sélection des panneaux/onduleurs/protections et schéma d'installation électrique.</p>
+        <div class="tags"><span class="tag">Photovoltaïque</span><span class="tag">Énergie Solaire</span></div>
+        <a href="#galerie" class="btn-outline">👁 Voir Détails</a>
+      </div>
+
+      <div class="card accent-cyan">
+        <div class="card-top-row">
+          <div class="icon-badge"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="18" r="3"/><circle cx="18" cy="18" r="3"/><path d="M6 15V8a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v7"/></svg></div>
+          <span class="status-pill complete">TERMINÉ</span>
+        </div>
+        <h3>Robots Suiveur de Ligne &amp; Tout-Terrain</h3>
+        <p class="desc">Conception mécanique/électronique, intégration de capteurs optiques/ultrasons et régulation de moteurs DC pour la compétition interne du Club Robotique ENIT.</p>
+        <div class="tags"><span class="tag">Robotique</span><span class="tag">Capteurs</span><span class="tag">Club ENIT</span></div>
+        <a href="#galerie" class="btn-outline">👁 Voir Détails</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPÉRIENCE -->
+  <section id="experience" class="reveal">
+    <div class="sec-head">
+      <div class="icon-row">💼</div>
+      <h2>Expérience Professionnelle</h2>
+      <p>Mes stages en entreprise</p>
     </div>
 
-    <!-- SECTION 04: PROJETS (BOM TABLE) -->
-    <div class="trace-line" aria-hidden="true"><div class="pad"></div></div>
-    <div>
-      <section id="projets" class="reveal">
-        <div class="sec-head">
-          <span class="ref">§04</span>
-          <h2>Projets — Nomenclature (BOM)</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
         </div>
-        <p class="lede" style="margin-bottom:20px;">
-          Une sélection détaillée de projets académiques, techniques et personnels, structurée comme une Bill of Materials (BOM) d'ingénierie.
-        </p>
+        <div class="tl-card">
+          <div class="tl-date">Juin — Juillet 2026</div>
+          <h3>Stage d'été — Automatisme &amp; Régulation</h3>
+          <span class="tl-org">CIPI ACTIA</span>
+          <p>Conception, automatisme et régulation d'une station de pompage industrielle sous l'environnement Siemens TIA Portal.</p>
+        </div>
+      </div>
 
-        <div class="bom-wrap">
-          <table class="bom">
-            <thead>
-              <tr>
-                <th style="width:65px;">Réf.</th>
-                <th style="width:230px;">Désignation</th>
-                <th>Description Technique</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="ref">P01</td>
-                <td class="name">Carte de Barrière Infrarouge (PFA1)</td>
-                <td>Simulation analogique PSpice, conception schématique, routage PCB sous EAGLE, assemblage manuel et validation fonctionnelle hardware sur banc de test.</td>
-              </tr>
-              <tr>
-                <td class="ref">P02</td>
-                <td class="name">Coordination Robot Mobile / Drone Temps Réel</td>
-                <td>Pipeline de perception embarquée (YOLOv8n) sur UAV couplé à une navigation autonome UGV (SLAM Toolbox, Nav2, AMCL) via ROS 2/DDS, validation HIL sur Jetson Nano.</td>
-              </tr>
-              <tr>
-                <td class="ref">P03</td>
-                <td class="name">Mesure RMS Temps Réel — STM32F411</td>
-                <td>Système de mesure de valeur efficace d'un signal sinusoïdal en C : acquisition ADC 12 bits avec oversampling, génération de signal, filtrage par moyenne exponentielle.</td>
-              </tr>
-              <tr>
-                <td class="ref">P04</td>
-                <td class="name">Système Multi-Tâches — BeagleBone Black</td>
-                <td>Linux embarqué temps réel : multithreading POSIX (ADC 12 bits, PWM 20–100%), module kernel personnalisée avec IRQ et mesure ktime_get_ns(), configuré via Device Tree Overlay.</td>
-              </tr>
-              <tr>
-                <td class="ref">P05</td>
-                <td class="name">Presse d'Injection Plastique — Automatique</td>
-                <td>Modélisation électrohydraulique sous MATLAB/Simulink : correcteurs P et PI (Routh-Hurwitz), PI discret (Jury), placement de pôles par retour d'état (Ackermann) et observateur de Luenberger.</td>
-              </tr>
-              <tr>
-                <td class="ref">P06</td>
-                <td class="name">Régulation de Température PWM — STM32F407</td>
-                <td>Asservissement PID de la vitesse d'un ventilateur en C++ (POO), double ADC 12 bits, UART, gestion des interruptions EXTI/TIM/ADC sous STM32CubeIDE.</td>
-              </tr>
-              <tr>
-                <td class="ref">P07</td>
-                <td class="name">Prédiction de Flexion des Doigts — ECoG</td>
-                <td>Traitement avancé de signaux biomédicaux, extraction de caractéristiques fréquentielles/temporelles et entraînement de modèles d'apprentissage automatique (Machine Learning).</td>
-              </tr>
-              <tr>
-                <td class="ref">P08</td>
-                <td class="name">Analyse du Signal Glottique (EGG) — MATLAB</td>
-                <td>Caractérisation de la dynamique des cordes vocales : calcul du signal DEGG, analyse spectrale par spectrogramme, extraction d'harmoniques et estimation de la fréquence fondamentale F0.</td>
-              </tr>
-              <tr>
-                <td class="ref">P09</td>
-                <td class="name">Automatisation Station de Pompage — TIA Portal</td>
-                <td>Programmation GRAFCET et LADDER pour 2 pompes : alternance automatique au démarrage, gestion des secours sur défaut thermique/débit, mode Auto/Manuel et validation sous PLCSIM.</td>
-              </tr>
-              <tr>
-                <td class="ref">P10</td>
-                <td class="name">Dimensionnement Installation Photovoltaïque</td>
-                <td>Bilan de puissance énergétique, étude du gisement solaire, sélection des panneaux/onduleurs/protections et schéma d'installation électrique.</td>
-              </tr>
-              <tr>
-                <td class="ref">P11</td>
-                <td class="name">Robots Suiveur de Ligne &amp; Tout-Terrain</td>
-                <td>Conception mécanique/électronique, intégration de capteurs optiques/ultrasons et régulation de moteurs DC pour la compétition interne du Club Robotique ENIT.</td>
-              </tr>
-            </tbody>
-          </table>
+      <div class="tl-item">
+        <div class="tl-icon green">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
         </div>
-      </section>
+        <div class="tl-card">
+          <div class="tl-date">Juin — Juillet 2025</div>
+          <h3>Stage Ouvrier — Distribution &amp; Comptage Électrique</h3>
+          <span class="tl-org">STEG, El Omran</span>
+          <p>Fabrication de tableaux de comptage, câblage, test et étalonnage des compteurs Moyenne Tension (MT) et Basse Tension (BT).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIE -->
+  <section id="galerie" class="reveal">
+    <div class="sec-head">
+      <div class="icon-row">📸</div>
+      <h2>Galerie — Photos &amp; Vidéos</h2>
+      <p>Aperçus visuels de quelques réalisations. Cliquez sur une photo pour l'agrandir.</p>
     </div>
 
-    <!-- SECTION 05: GALERIE MULTIMÉDIA -->
-    <div class="trace-line" aria-hidden="true"><div class="pad"></div></div>
-    <div>
-      <section id="galerie" class="reveal">
-        <div class="sec-head">
-          <span class="ref">§05</span>
-          <h2>Galerie — Photos &amp; Vidéos</h2>
+    <div class="media-grid">
+      <figure class="media-card album" data-images="media/images/carte_electronique.jpg,media/images/carte_electronique_2.jpg">
+        <div class="album-viewport">
+          <img class="album-img" src="media/images/carte_electronique.jpg" alt="Carte électronique de barrière infrarouge (PFA1)" onclick="openLightbox(this.src)">
+          <button class="album-nav prev" onclick="albumNav(this,-1)" aria-label="Photo précédente">‹</button>
+          <button class="album-nav next" onclick="albumNav(this,1)" aria-label="Photo suivante">›</button>
+          <div class="album-dots"><span class="dot active"></span><span class="dot"></span></div>
         </div>
-        <p class="lede" style="margin-bottom:20px;">
-          Aperçus visuels et démonstrations de quelques réalisations. Cliquez sur une image pour l'agrandir.
-        </p>
+        <figcaption><span class="tag-mini">P01</span>Carte de barrière infrarouge (PFA1)</figcaption>
+      </figure>
 
-        <div class="media-grid">
-          <!-- Album Photo (P01) -->
-          <figure class="media-card album" data-images="media/images/carte_electronique.jpg,media/images/carte_electronique_2.jpg">
-            <div class="album-viewport">
-              <img class="album-img" src="media/images/carte_electronique.jpg" alt="Carte électronique de barrière infrarouge (PFA1)" onclick="openLightbox(this.src)">
-              <button class="album-nav prev" onclick="albumNav(this, -1)" aria-label="Photo précédente">‹</button>
-              <button class="album-nav next" onclick="albumNav(this, 1)" aria-label="Photo suivante">›</button>
-              <div class="album-dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-              </div>
-            </div>
-            <figcaption><span class="tag">P01</span>Carte de barrière infrarouge (PFA1)</figcaption>
+      <figure class="media-card">
+        <video controls preload="none" poster="media/images/poster-rms-video.jpg">
+          <source src="media/videos/rms_video.mp4" type="video/mp4">
+        </video>
+        <figcaption><span class="tag-mini">P03</span>Mesure RMS temps réel — STM32F411</figcaption>
+      </figure>
+
+      <figure class="media-card">
+        <video controls preload="none" poster="media/images/poster-beaglebone.jpg">
+          <source src="media/videos/beaglebone_video.mp4" type="video/mp4">
+        </video>
+        <figcaption><span class="tag-mini">P04</span>Système Multi-Tâches — BeagleBone Black</figcaption>
+      </figure>
+
+      <figure class="media-card">
+        <img src="media/images/robot.jpg" alt="Robot suiveur de ligne" loading="lazy" onclick="openLightbox(this.src)">
+        <figcaption><span class="tag-mini">P11</span>Robot suiveur de ligne</figcaption>
+      </figure>
+
+      <figure class="media-card">
+        <video controls preload="none" poster="media/images/poster-station-pompage.jpg">
+          <source src="media/videos/station_pompage.mp4" type="video/mp4">
+        </video>
+        <figcaption><span class="tag-mini">P09</span>Automatisation station de pompage — TIA Portal</figcaption>
+      </figure>
+
+      <figure class="media-card">
+        <video controls preload="none" poster="media/images/poster-robot-drone.jpg">
+          <source src="media/videos/robot_drone.mp4" type="video/mp4">
+        </video>
+        <figcaption><span class="tag-mini">P02</span>Coordination robot mobile / drone en temps réel</figcaption>
+      </figure>
+
+      <figure class="media-card">
+        <video controls preload="none" poster="media/images/poster-pwm-regulation.jpg">
+          <source src="media/videos/pwm_regulation.mp4" type="video/mp4">
+        </video>
+        <figcaption><span class="tag-mini">P06</span>Régulation de température PWM — STM32F407</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ASSOCIATIONS, CERTIFICATIONS & LANGUES -->
+  <section id="autres" class="reveal">
+    <div class="sec-head">
+      <div class="icon-row">🤝</div>
+      <h2>Engagements Associatifs</h2>
+      <p>Leadership et implication dans la communauté étudiante</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card accent-cyan">
+        <div class="icon-badge" style="margin-bottom:16px;"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Club Robotique ENIT</h3>
+        <p class="desc">Membre actif (2025 – Présent). Formation Arduino au profit du club NextGen.</p>
+        <div class="tags"><span class="tag">Robotique</span><span class="tag">Formation</span></div>
+      </div>
+
+      <div class="card accent-green">
+        <div class="icon-badge green" style="margin-bottom:16px;"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 22V4a2 2 0 0 1 2-2h9l5 5v15"/><path d="M4 13h9M4 17h9"/></svg></div>
+        <h3>Journée Torath, Thala</h3>
+        <p class="desc">2025 — Accompagnement d'un projet PFE technologie/patrimoine.</p>
+        <div class="tags"><span class="tag">Patrimoine</span><span class="tag">2025</span></div>
+      </div>
+
+      <div class="card accent-amber">
+        <div class="icon-badge amber" style="margin-bottom:16px;"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg></div>
+        <h3>Sports &amp; Intérêts</h3>
+        <p class="desc">Musculation (2023–présent) • Karaté ceinture marron (2016–2019) • Kick-boxing (2015)</p>
+        <div class="tags"><span class="tag">Musculation</span><span class="tag">Karaté</span></div>
+      </div>
+    </div>
+
+    <div style="margin-top:44px;" class="grid-2">
+      <div class="card accent-blue">
+        <h3 style="margin-bottom:16px;">🌍 Langues</h3>
+        <div class="lang-bar"><span>Arabe</span><span>Natif</span></div>
+        <div class="lang-bar"><span>Français</span><span>B2 (Courant)</span></div>
+        <div class="lang-bar"><span>Anglais</span><span>B1 (Technique)</span></div>
+        <div class="lang-bar"><span>Allemand</span><span>A1 (Débutant)</span></div>
+      </div>
+
+      <div class="card accent-purple">
+        <h3 style="margin-bottom:16px;">🏅 Certifications</h3>
+        <div class="cert-grid">
+          <figure class="cert-card">
+            <img src="media/images/cert-croissant-rouge.jpg" alt="Certificat Croissant-Rouge Tunisien" loading="lazy" onclick="openLightbox(this.src)">
+            <figcaption>Croissant-Rouge Tunisien</figcaption>
           </figure>
-
-          <!-- Vidéo (P03) -->
-          <figure class="media-card">
-            <video controls preload="none" poster="media/images/poster-rms-video.jpg">
-              <source src="media/videos/rms_video.mp4" type="video/mp4">
-              Votre navigateur ne supporte pas la lecture de cette vidéo.
-            </video>
-            <figcaption><span class="tag">P03</span>Mesure RMS temps réel — STM32F411</figcaption>
+          <figure class="cert-card">
+            <img src="media/images/cert-injaz.jpg" alt="Certificat INJAZ Tunisia" loading="lazy" onclick="openLightbox(this.src)">
+            <figcaption>Company Program — INJAZ</figcaption>
           </figure>
-
-          <!-- Vidéo (P04) -->
-          <figure class="media-card">
-            <video controls preload="none" poster="media/images/poster-beaglebone.jpg">
-              <source src="media/videos/beaglebone_video.mp4" type="video/mp4">
-              Votre navigateur ne supporte pas la lecture de cette vidéo.
-            </video>
-            <figcaption><span class="tag">P04</span>Système Multi-Tâches — BeagleBone Black</figcaption>
-          </figure>
-          
-          <!-- Photo simple (P11) -->
-          <figure class="media-card">
-            <img src="media/images/robot.jpg" alt="Projet Robot Suiveur de ligne" loading="lazy" onclick="openLightbox(this.src)">
-            <figcaption><span class="tag">P11</span>Robot suiveur de ligne</figcaption>
-          </figure>
-
-          <!-- Vidéo (P09) -->
-          <figure class="media-card">
-            <video controls preload="none" poster="media/images/poster-station-pompage.jpg">
-              <source src="media/videos/station_pompage.mp4" type="video/mp4">
-              Votre navigateur ne supporte pas la lecture de cette vidéo.
-            </video>
-            <figcaption><span class="tag">P09</span>Automatisation station de pompage — TIA Portal</figcaption>
-          </figure>
-
-          <!-- Vidéo (P02) -->
-          <figure class="media-card">
-            <video controls preload="none" poster="media/images/poster-robot-drone.jpg">
-              <source src="media/videos/robot_drone.mp4" type="video/mp4">
-              Votre navigateur ne supporte pas la lecture de cette vidéo.
-            </video>
-            <figcaption><span class="tag">P02</span>Coordination robot mobile / drone en temps réel</figcaption>
-          </figure>
-
-          <!-- Vidéo (P06) -->
-          <figure class="media-card">
-            <video controls preload="none" poster="media/images/poster-pwm-regulation.jpg">
-              <source src="media/videos/pwm_regulation.mp4" type="video/mp4">
-              Votre navigateur ne supporte pas la lecture de cette vidéo.
-            </video>
-            <figcaption><span class="tag">P06</span>Régulation de température PWM — STM32F407</figcaption>
+          <figure class="cert-card">
+            <img src="media/images/cert-twincat.jpg" alt="Certificat TwinCAT 3" loading="lazy" onclick="openLightbox(this.src)">
+            <figcaption>TwinCAT 3 — Beckhoff</figcaption>
           </figure>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <footer class="reveal" id="contact">
+    <div class="sec-head">
+      <div class="icon-row">📬</div>
+      <h2>Discutons d'une Opportunité de Stage PFE</h2>
+      <p>Disponible pour un stage de fin d'études en systèmes électriques, smart, automatisme ou robotique.</p>
     </div>
 
-    <!-- SECTION 06: AUTRES EXPÉRIENCES, CERTIFICATIONS & LANGUES -->
-    <div class="trace-line" aria-hidden="true"><div class="pad"></div></div>
-    <div>
-      <section id="autres" class="reveal">
-        <div class="sec-head">
-          <span class="ref">§06</span>
-          <h2>Activités, Certifications &amp; Langues</h2>
+    <div class="contact-grid">
+      <div class="contact-info-card">
+        <div class="contact-item">
+          <span class="icon-badge"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <div><span class="ci-label">Localisation</span><span class="ci-value">Ksar Saïd 2, Tunis</span></div>
+        </div>
+        <div class="contact-item">
+          <span class="icon-badge green"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></svg></span>
+          <div><span class="ci-label">Email</span><span class="ci-value"><a href="mailto:hamdi.chaouachi@etudiant-enit.utm.tn">hamdi.chaouachi@etudiant-enit.utm.tn</a></span></div>
+        </div>
+        <div class="contact-item">
+          <span class="icon-badge purple"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 3a2 2 0 0 1-.5 2.1L8 10.1a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c1 .3 2 .5 3 .7a2 2 0 0 1 1.7 2z"/></svg></span>
+          <div><span class="ci-label">Téléphone</span><span class="ci-value"><a href="tel:+21625794452">+216 25 794 452</a></span></div>
         </div>
 
-        <div class="misc-grid">
-          <!-- Engagement Associatif -->
-          <div class="misc-card">
-            <span class="label">Engagement Associatif</span>
-            <ul>
-              <li><strong>Club Robotique ENIT</strong> — Membre actif (2025 – Présent)</li>
-              <li><strong>Journée Torath, Thala (2025)</strong> — Accompagnement d'un PFE technologie/patrimoine &amp; animation d'une formation Arduino au profit du club NextGen.</li>
-            </ul>
-          </div>
-
-          <!-- Langues -->
-          <div class="misc-card">
-            <span class="label">Langues</span>
-            <div class="lang-bar"><span>Arabe</span><span>Natif</span></div>
-            <div class="lang-bar"><span>Français</span><span>B2 (Courant)</span></div>
-            <div class="lang-bar"><span>Anglais</span><span>B1 (Technique)</span></div>
-            <div class="lang-bar"><span>Allemand</span><span>A1 (Débutant)</span></div>
-          </div>
-
-          <!-- Sports & Loisirs -->
-          <div class="misc-card">
-            <span class="label">Sports &amp; Intérêts</span>
-            <ul>
-              <li><strong>Musculation / Fitness</strong> — Pratique régulière (2023 – Présent)</li>
-              <li><strong>Karaté</strong> — Ceinture marron (2016 – 2019)</li>
-              <li><strong>Kick-boxing</strong> — Pratique en club (2015)</li>
-            </ul>
-          </div>
+        <div class="social-row">
+          <a class="social-circle" href="https://www.linkedin.com/in/hamdi-chaouachi-848250343/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.1c.5-.9 1.8-1.9 3.6-1.9 3.9 0 4.6 2.6 4.6 5.9V21h-4v-5.8c0-1.4 0-3.2-2-3.2s-2.3 1.5-2.3 3.1V21h-4V9z"/></svg>
+          </a>
+          <a class="social-circle" href="https://github.com/HamdiChaouachi" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.1.39-2 1.03-2.7-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.4 9.4 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.7 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85v2.74c0 .26.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+          </a>
         </div>
+      </div>
 
-        <!-- Section Certificats -->
-        <div class="cert-section">
-          <h3 class="cert-title">Certifications &amp; Attestations</h3>
-          <div class="cert-grid">
-            <figure class="cert-card">
-              <img src="media/images/cert-croissant-rouge.jpg" alt="Certificat Croissant-Rouge Tunisien" loading="lazy" onclick="openLightbox(this.src)">
-              <figcaption>Croissant-Rouge Tunisien</figcaption>
-            </figure>
-            <figure class="cert-card">
-              <img src="media/images/cert-injaz.jpg" alt="Certificat Company Program — INJAZ Tunisia" loading="lazy" onclick="openLightbox(this.src)">
-              <figcaption>Company Program — INJAZ Tunisia</figcaption>
-            </figure>
-            <figure class="cert-card">
-              <img src="media/images/cert-twincat.jpg" alt="Certificat TwinCAT 3 PLC Basics — Beckhoff" loading="lazy" onclick="openLightbox(this.src)">
-              <figcaption>TwinCAT 3: PLC Basics — Beckhoff</figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
+      <div class="contact-form-card">
+        <form class="contact-form" onsubmit="return sendContactForm(event)">
+          <input type="text" id="cf-name" placeholder="Votre nom" required>
+          <input type="email" id="cf-email" placeholder="Votre email" required>
+          <input type="text" id="cf-subject" placeholder="Sujet">
+          <textarea id="cf-message" placeholder="Votre message" rows="5" required></textarea>
+          <button type="submit" class="btn-send">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg>
+            Envoyer le message
+          </button>
+        </form>
+      </div>
     </div>
-  </main>
 
-  <!-- FOOTER & CONTACT -->
-  <footer class="reveal">
-    <div class="eyebrow" style="margin-bottom:10px;">§07 — Contact</div>
-    <div class="cta-title">Discutons d'une opportunité de Stage PFE</div>
-    <p>
-      Disponible pour un stage de fin d'études d'ingénieur en systèmes embarqués, automatisme, mécatronique ou électrotechnique.
-    </p>
-    <div class="cta-row">
-      <a class="btn primary" href="mailto:hamdi.chaouachi@etudiant-enit.utm.tn">Envoyer un e-mail</a>
-      <a class="btn" href="https://www.linkedin.com/in/hamdi-chaouachi-848250343/" target="_blank" rel="noopener">Profil LinkedIn</a>
-    </div>
-    <div class="rev">
-      HAMDI CHAOUACHI &nbsp;•&nbsp; ENIT TUNIS &nbsp;•&nbsp; REVISION 2026
-    </div>
+    <div class="footer-credit">HAMDI CHAOUACHI &nbsp;•&nbsp; ENIT TUNIS &nbsp;•&nbsp; 2026</div>
   </footer>
 </div>
 
-<!-- LIGHTBOX MODAL -->
 <div id="lightbox" class="lightbox" onclick="closeLightbox()">
   <button class="lightbox-close" onclick="closeLightbox()" aria-label="Fermer">✕</button>
-  <img id="lightbox-img" src="" alt="Agrandissement image">
+  <img id="lightbox-img" src="" alt="Photo agrandie">
 </div>
 
-<!-- JavaScript -->
 <script src="script.js"></script>
-
 </body>
 </html>

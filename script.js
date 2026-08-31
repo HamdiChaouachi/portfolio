@@ -1,117 +1,62 @@
-/* ==========================================
-   PORTFOLIO - SCRIPT.JS
-   ========================================== */
+// Album (galerie photo à plusieurs images)
+function albumNav(btn, dir) {
+  const card = btn.closest('.album');
+  const images = card.dataset.images.split(',');
+  const img = card.querySelector('.album-img');
+  const dots = card.querySelectorAll('.dot');
+  let idx = images.indexOf(img.getAttribute('src'));
+  idx = (idx + dir + images.length) % images.length;
+  img.setAttribute('src', images[idx]);
+  dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+}
 
-// 1. LIGHTBOX (AGRANDISSEMENT DES IMAGES)
+// Lightbox (zoom photo)
 function openLightbox(src) {
   const lb = document.getElementById('lightbox');
-  const lbImg = document.getElementById('lightbox-img');
-  if (lb && lbImg) {
-    lbImg.src = src;
-    lb.classList.add('open');
-  }
+  document.getElementById('lightbox-img').src = src;
+  lb.classList.add('open');
 }
-
 function closeLightbox() {
-  const lb = document.getElementById('lightbox');
-  if (lb) {
-    lb.classList.remove('open');
-  }
+  document.getElementById('lightbox').classList.remove('open');
 }
 
-// Fermeture de la lightbox avec la touche Échap
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') {
-    closeLightbox();
-  }
-});
-
-
-// 2. NAVIGATION DANS LES ALBUMS PHOTOS (P01) ET ALBUMS MIXTES PHOTO+VIDÉO (P03)
-function albumNav(btn, direction) {
-  const card = btn.closest('.album');
-  if (!card) return;
-
-  const dots = card.querySelectorAll('.album-dots .dot');
-
-  // Cas album mixte (photo + vidéos), ex: P03
-  if (card.classList.contains('mixed-media')) {
-    const items = JSON.parse(card.dataset.items);
-    const imgEl = card.querySelector('.album-img');
-    const videoEl = card.querySelector('.album-video');
-    const sourceEl = videoEl.querySelector('source');
-
-    let currentIndex = parseInt(card.dataset.currentIndex || '0', 10);
-    currentIndex = (currentIndex + direction + items.length) % items.length;
-    card.dataset.currentIndex = currentIndex;
-
-    const item = items[currentIndex];
-
-    // Toujours mettre en pause/reset la vidéo avant de changer de média
-    videoEl.pause();
-    videoEl.currentTime = 0;
-
-    if (item.type === 'image') {
-      imgEl.src = item.src;
-      imgEl.style.display = '';
-      videoEl.style.display = 'none';
-    } else if (item.type === 'video') {
-      sourceEl.src = item.src;
-      if (item.poster) videoEl.poster = item.poster;
-      videoEl.load();
-      videoEl.style.display = '';
-      imgEl.style.display = 'none';
-    }
-
-    dots.forEach((dot, idx) => {
-      dot.classList.toggle('active', idx === currentIndex);
-    });
-    return;
-  }
-
-  // Cas album photo classique (P01)
-  const images = card.dataset.images.split(',');
-  const imgEl = card.querySelector('.album-img');
-
-  let currentIndex = images.findIndex(url => imgEl.src.includes(url.trim()));
-  if (currentIndex === -1) currentIndex = 0;
-
-  currentIndex = (currentIndex + direction + images.length) % images.length;
-
-  imgEl.src = images[currentIndex].trim();
-
-  dots.forEach((dot, idx) => {
-    dot.classList.toggle('active', idx === currentIndex);
-  });
+// Formulaire de contact -> ouvre le client email avec les champs pré-remplis
+function sendContactForm(e) {
+  e.preventDefault();
+  const name = document.getElementById('cf-name').value;
+  const email = document.getElementById('cf-email').value;
+  const subject = document.getElementById('cf-subject').value || 'Contact depuis le portfolio';
+  const message = document.getElementById('cf-message').value;
+  const body = `Nom: ${name}\nEmail: ${email}\n\n${message}`;
+  const mailto = `mailto:hamdi.chaouachi@etudiant-enit.utm.tn?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  window.location.href = mailto;
+  return false;
 }
 
+// Animation d'apparition au scroll
+const els = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window) {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  els.forEach(el => io.observe(el));
+} else {
+  els.forEach(el => el.classList.add('in'));
+}
 
-// 3. ANIMATION AU DÉFILEMENT (SCROLL REVEAL)
-const observerOptions = {
-  root: null,
-  rootMargin: '0px',
-  threshold: 0.1
-};
+// Mise en surbrillance du lien de navigation actif selon la section visible
+const navLinks = document.querySelectorAll('.nav-links a');
+const sections = Array.from(navLinks).map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('in');
-    }
+function updateActiveNav() {
+  let currentId = sections[0] ? sections[0].id : null;
+  const scrollPos = window.scrollY + 110;
+  sections.forEach(sec => {
+    if (sec.offsetTop <= scrollPos) currentId = sec.id;
   });
-}, observerOptions);
-
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-});
-
-
-// 4. SECOURS AUTOMATIQUE POUR IMAGES MANQUANTES (FALLBACK SVG)
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('img').forEach(img => {
-    img.addEventListener('error', function() {
-      this.onerror = null;
-      this.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300"><rect width="100%" height="100%" fill="%23161616"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%232ecc82" font-family="monospace" font-size="13">[IMAGE_INTROUVABLE]</text></svg>';
-    });
+  navLinks.forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + currentId);
   });
-});
+}
+window.addEventListener('scroll', updateActiveNav, { passive: true });
+updateActiveNav();
