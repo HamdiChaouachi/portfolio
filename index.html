@@ -46,22 +46,63 @@
 <div class="wrap">
   <!-- HERO -->
   <header class="hero reveal" id="profil">
-    <div class="avatar-ring">
-      <img src="media/images/profile.jpg" alt="Hamdi Chaouachi" class="avatar-img">
-    </div>
-    <h1 class="hero-title">Hamdi <span class="last">Chaouachi</span></h1>
-    <div class="tagline">⚡ Ingénieur Électrique</div>
-    <div class="badge-status"><span class="dot"></span> Recherche de Stage de Fin d'Études (PFE 2027) — Disponible</div>
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="badge-status"><span class="dot"></span> Recherche de Stage de Fin d'Études (PFE 2026) — Disponible</div>
 
-    <p style="max-width:640px; margin-top:26px; color:var(--silk-dim); font-size:1rem;">
-      Élève ingénieur en génie électrique à l'<strong style="color:#fff;">École Nationale d'Ingénieurs de Tunis (ENIT)</strong>, je construis mes compétences autour du smart, des systèmes électriques, de l'automatisme et de la robotique. Je suis actuellement à la recherche d'un <strong style="color:#fff;">Stage de Fin d'Études (PFE)</strong>.
-    </p>
+        <h1 class="hero-title-big">
+          <span class="grad-line">Ingénieur du Smart</span>
+          <span class="white-line">&amp; des Systèmes Électriques</span>
+        </h1>
+
+        <p class="hero-lead">
+          <strong>Élève ingénieur passionné</strong> par l'automatisation industrielle, les systèmes embarqués/smart et les systèmes électriques &amp; énergie. Je conçois des solutions qui allient automatisme, électronique de puissance et robotique, pour un avenir industriel plus intelligent et connecté.
+        </p>
+
+        <div class="feature-list">
+          <div class="feature-item">
+            <span class="icon-badge">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>
+            </span>
+            <div>
+              <h4>Systèmes Embarqués &amp; Smart</h4>
+              <p>STM32, ESP32, IoT et automatisation intelligente</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="icon-badge green">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4M8 16h.01M16 16h.01"/></svg>
+            </span>
+            <div>
+              <h4>Robotique &amp; Automatisme</h4>
+              <p>ROS 2, capteurs, GRAFCET et régulation industrielle</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-card">
+        <div class="profile-avatar-wrap">
+          <div class="avatar-ring-lg">
+            <img src="media/images/profile.jpg" alt="Hamdi Chaouachi" class="avatar-img-lg">
+          </div>
+          <span class="badge-pill">🎓 ENIT</span>
+        </div>
+        <h3 class="profile-name">Hamdi Chaouachi</h3>
+        <p class="profile-sub">Smart &amp; Systèmes Électriques</p>
+
+        <div class="stats-row">
+          <div class="stat"><span class="stat-num">13+</span><span class="stat-label">Projets</span></div>
+          <div class="stat"><span class="stat-num">3</span><span class="stat-label">Certifications</span></div>
+          <div class="stat"><span class="stat-num">2</span><span class="stat-label">Stages</span></div>
+        </div>
+      </div>
+    </div>
   </header>
 
   <!-- FORMATION -->
   <section id="formation" class="reveal">
     <div class="sec-head">
-      <div class="icon-row">🎓</div>
       <h2>Formation</h2>
       <p>Mon parcours académique en génie électrique</p>
     </div>
@@ -107,41 +148,63 @@
   <!-- COMPÉTENCES -->
   <section id="competences" class="reveal">
     <div class="sec-head">
-      <div class="icon-row">🛠️</div>
       <h2>Compétences Techniques</h2>
       <p>Langages, matériel et outils que j'utilise au quotidien</p>
     </div>
 
     <div class="skills-wrap">
       <div class="skill-card">
-        <div class="skill-label">💻 Langages de Programmation</div>
+        <div class="skill-label">💻 Programmation</div>
         <div class="tags">
-          <span class="tag">C</span><span class="tag">C++</span><span class="tag">Python</span>
-          <span class="tag">LADDER / GRAFCET</span><span class="tag">MATLAB Script</span>
+          <span class="tag">C</span><span class="tag">C++</span><span class="tag">Python</span><span class="tag">VHDL</span>
         </div>
       </div>
       <div class="skill-card">
-        <div class="skill-label">🔌 Systèmes Embarqués &amp; Hardware</div>
+        <div class="skill-label">🔌 Microcontrôleurs &amp; Systèmes Embarqués</div>
         <div class="tags">
-          <span class="tag">STM32</span><span class="tag">ESP32</span><span class="tag">Arduino</span>
+          <span class="tag">STM32F411</span><span class="tag">STM32F407</span><span class="tag">ESP32</span><span class="tag">Arduino</span>
           <span class="tag">BeagleBone Black</span><span class="tag">Jetson Nano</span><span class="tag">FPGA Zybo</span>
+          <span class="tag">Linux Embarqué</span><span class="tag">POSIX</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-label">⚙️ Automatisme Industriel &amp; Régulation</div>
+        <div class="tags">
+          <span class="tag">TIA Portal</span><span class="tag">GRAFCET</span><span class="tag">LADDER</span><span class="tag">PLCSIM</span>
+          <span class="tag">Siemens S7-1200</span><span class="tag">PID</span><span class="tag">Correcteurs P/PI</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-label">🤖 Robotique &amp; IA</div>
+        <div class="tags">
+          <span class="tag">ROS 2</span><span class="tag">DDS</span><span class="tag">Gazebo</span><span class="tag">Nav2</span><span class="tag">SLAM Toolbox</span>
+          <span class="tag">AMCL</span><span class="tag">RViz2</span><span class="tag">YOLOv8n</span><span class="tag">Navigation Autonome</span><span class="tag">Perception Embarquée</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-label">⚡ Systèmes Électriques &amp; Énergie</div>
+        <div class="tags">
+          <span class="tag">Installations Électriques</span><span class="tag">Électronique de Puissance</span>
+          <span class="tag">Convertisseurs (Flyback)</span><span class="tag">Commande MLI/PWM</span>
+          <span class="tag">Conversion d'Énergie</span><span class="tag">DSP TI F28335</span>
+          <span class="tag">Photovoltaïque</span><span class="tag">Comptage MT/BT</span>
         </div>
       </div>
       <div class="skill-card">
         <div class="skill-label">🧰 Logiciels &amp; CAO / Simulation</div>
         <div class="tags">
-          <span class="tag">MATLAB</span><span class="tag">STM32CubeIDE</span><span class="tag">TIA Portal</span>
-          <span class="tag">Vivado</span><span class="tag">ModelSim</span><span class="tag">EAGLE PCB</span>
-          <span class="tag">PSpice</span><span class="tag">Gazebo</span>
+          <span class="tag">MATLAB/Simulink</span><span class="tag">STM32CubeIDE</span><span class="tag">STM32CubeMonitor</span><span class="tag">TIA Portal</span>
+          <span class="tag">Vivado</span><span class="tag">ModelSim</span><span class="tag">EAGLE PCB</span><span class="tag">KiCad</span>
+          <span class="tag">PSpice</span><span class="tag">PSIM</span><span class="tag">Code Composer Studio</span>
         </div>
       </div>
     </div>
+
   </section>
 
   <!-- PROJETS -->
   <section id="projets" class="reveal">
     <div class="sec-head">
-      <div class="icon-row">🚀</div>
       <h2>Projets</h2>
       <p>Une sélection de mes réalisations académiques et personnelles</p>
     </div>
@@ -269,13 +332,34 @@
         <a href="#galerie" class="btn-outline">👁 Voir Détails</a>
       </div>
 
+      <div class="card accent-purple">
+        <div class="card-top-row">
+          <div class="icon-badge purple"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M8 4v16M16 4v16M2 9h6M16 9h6M2 15h6M16 15h6"/></svg></div>
+          <span class="status-pill complete">TERMINÉ</span>
+        </div>
+        <h3>Commande Numérique d'un Convertisseur — DSP TI F28335</h3>
+        <p class="desc">Modélisation et simulation sous PSIM, génération et implantation de code C sur DSP TI F28335 via Code Composer Studio, avec mise en œuvre de signaux PWM monophasés/triphasés et exploitation de l'ADC pour la commande numérique.</p>
+        <div class="tags"><span class="tag">DSP F28335</span><span class="tag">PSIM</span><span class="tag">CCS</span><span class="tag">PWM</span></div>
+        <a href="#galerie" class="btn-outline">👁 Voir Détails</a>
+      </div>
+
+      <div class="card accent-amber">
+        <div class="card-top-row">
+          <div class="icon-badge amber"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h8l-1 8 10-12h-8l1-8z"/></svg></div>
+          <span class="status-pill complete">TERMINÉ</span>
+        </div>
+        <h3>Alimentation Haute Fréquence &amp; Convertisseur Flyback</h3>
+        <p class="desc">Simulation PSpice et validation expérimentale de la commande MLI, dimensionnement complet d'un convertisseur Flyback, saisie de schéma et routage PCB de la carte driver sous KiCad.</p>
+        <div class="tags"><span class="tag">Flyback</span><span class="tag">PSpice</span><span class="tag">KiCad</span><span class="tag">MLI</span></div>
+        <a href="#galerie" class="btn-outline">👁 Voir Détails</a>
+      </div>
+
     </div>
   </section>
 
   <!-- EXPÉRIENCE -->
   <section id="experience" class="reveal">
     <div class="sec-head">
-      <div class="icon-row">💼</div>
       <h2>Expérience Professionnelle</h2>
       <p>Mes stages en entreprise</p>
     </div>
@@ -310,7 +394,6 @@
   <!-- GALERIE -->
   <section id="galerie" class="reveal">
     <div class="sec-head">
-      <div class="icon-row">📸</div>
       <h2>Galerie — Photos &amp; Vidéos</h2>
       <p>Aperçus visuels de quelques réalisations. Cliquez sur une photo pour l'agrandir.</p>
     </div>
@@ -371,7 +454,6 @@
   <!-- ASSOCIATIONS, CERTIFICATIONS & LANGUES -->
   <section id="autres" class="reveal">
     <div class="sec-head">
-      <div class="icon-row">🤝</div>
       <h2>Engagements Associatifs</h2>
       <p>Leadership et implication dans la communauté étudiante</p>
     </div>
@@ -412,8 +494,8 @@
         <h3 style="margin-bottom:16px;">🏅 Certifications</h3>
         <div class="cert-grid">
           <figure class="cert-card">
-            <img src="media/images/cert-croissant-rouge.jpg" alt="Certificat Croissant-Rouge Tunisien" loading="lazy" onclick="openLightbox(this.src)">
-            <figcaption>Croissant-Rouge Tunisien</figcaption>
+            <img src="media/images/cert-croissant-rouge.jpg" alt="Certificat Drones: IoT & Design — Croissant-Rouge Tunisien" loading="lazy" onclick="openLightbox(this.src)">
+            <figcaption>Drones: IoT &amp; Design — Croissant-Rouge</figcaption>
           </figure>
           <figure class="cert-card">
             <img src="media/images/cert-injaz.jpg" alt="Certificat INJAZ Tunisia" loading="lazy" onclick="openLightbox(this.src)">
@@ -431,7 +513,6 @@
   <!-- CONTACT -->
   <footer class="reveal" id="contact">
     <div class="sec-head">
-      <div class="icon-row">📬</div>
       <h2>Discutons d'une Opportunité de Stage PFE</h2>
       <p>Disponible pour un stage de fin d'études en systèmes électriques, smart, automatisme ou robotique.</p>
     </div>
