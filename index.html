@@ -541,11 +541,14 @@
       </div>
 
       <div class="contact-form-card">
-        <form class="contact-form" onsubmit="return sendContactForm(event)">
-          <input type="text" id="cf-name" placeholder="Votre nom" required>
-          <input type="email" id="cf-email" placeholder="Votre email" required>
-          <input type="text" id="cf-subject" placeholder="Sujet">
-          <textarea id="cf-message" placeholder="Votre message" rows="5" required></textarea>
+        <form class="contact-form" action="https://formsubmit.co/hamdi.chaouachi@etudiant-enit.utm.tn" method="POST">
+          <input type="hidden" name="_subject" value="Nouveau message depuis votre portfolio">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://hamdichaouachi.github.io/portfolio/#contact">
+          <input type="text" name="name" placeholder="Votre nom" required>
+          <input type="email" name="email" placeholder="Votre email" required>
+          <input type="text" name="subject" placeholder="Sujet">
+          <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
           <button type="submit" class="btn-send">
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg>
             Envoyer le message
