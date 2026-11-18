@@ -1,4 +1,4 @@
-// Album (galerie photo à plusieurs images)
+// Album (multi-image photo gallery)
 function albumNav(btn, dir) {
   const card = btn.closest('.album');
   const images = card.dataset.images.split(',');
@@ -10,7 +10,7 @@ function albumNav(btn, dir) {
   dots.forEach((d, i) => d.classList.toggle('active', i === idx));
 }
 
-// Lightbox (zoom photo)
+// Lightbox (photo zoom)
 function openLightbox(src) {
   const lb = document.getElementById('lightbox');
   document.getElementById('lightbox-img').src = src;
@@ -20,20 +20,20 @@ function closeLightbox() {
   document.getElementById('lightbox').classList.remove('open');
 }
 
-// Formulaire de contact -> ouvre le client email avec les champs pré-remplis
+// Contact form -> opens the email client with pre-filled fields
 function sendContactForm(e) {
   e.preventDefault();
   const name = document.getElementById('cf-name').value;
   const email = document.getElementById('cf-email').value;
-  const subject = document.getElementById('cf-subject').value || 'Contact depuis le portfolio';
+  const subject = document.getElementById('cf-subject').value || 'Contact from the portfolio';
   const message = document.getElementById('cf-message').value;
-  const body = `Nom: ${name}\nEmail: ${email}\n\n${message}`;
+  const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
   const mailto = `mailto:hamdi.chaouachi@etudiant-enit.utm.tn?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   window.location.href = mailto;
   return false;
 }
 
-// Animation d'apparition au scroll
+// Reveal-on-scroll animation
 const els = document.querySelectorAll('.reveal');
 if ('IntersectionObserver' in window) {
   const io = new IntersectionObserver((entries) => {
@@ -44,7 +44,7 @@ if ('IntersectionObserver' in window) {
   els.forEach(el => el.classList.add('in'));
 }
 
-// Mise en surbrillance du lien de navigation actif selon la section visible
+// Highlight the active navigation link based on the visible section
 const navLinks = document.querySelectorAll('.nav-links a');
 const sections = Array.from(navLinks).map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
 
